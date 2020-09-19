@@ -1,3 +1,22 @@
+if (amPm == "am"){
+    if (currentHour < hourOfTheDay[i]) {
+        commentMaker.addClass('past');
+    } else if (currentHour == hourOfTheDay[i]) {
+        commentMaker.addClass('present');
+    } else if (currentHour > hourOfTheDay[i])  {
+        commentMaker.addClass('future');
+    }
+} 
+else  {
+    if (currentHour > hourOfTheDay[i]) {
+        commentMaker.addClass('past');
+    } else if (currentHour == hourOfTheDay[i]) {
+        commentMaker.addClass('present');
+    } else {
+        commentMaker.addClass('future');
+    }
+}
+
 //================================================================================
 //Code from Building the Calendar on 9-17 
 //================================================================================
